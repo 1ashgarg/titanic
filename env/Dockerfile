@@ -56,6 +56,10 @@ RUN conda install --quiet --yes \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
 
+# Install Kaggle API package
+RUN /opt/conda/bin/pip install --upgrade pip && \
+    /opt/conda/bin/pip install kaggle
+
 # Install facets which does not have a pip or conda package at the moment
 RUN cd /tmp && \
     git clone https://github.com/PAIR-code/facets.git && \
