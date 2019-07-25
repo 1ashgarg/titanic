@@ -114,3 +114,17 @@ venv.bak/
 \.local/share/jupyter/notebook_secret
 
 \.local/share/jupyter/runtime/notebook_cookie_secret
+
+input/train\.csv
+
+input/test\.csv
+
+\.bash_history
+
+\.jupyter/jupyter_notebook_config\.json
+
+\.jupyter/migrated
+
+\.kaggle/kaggle\.json
+
+input/gender_submission\.csv
